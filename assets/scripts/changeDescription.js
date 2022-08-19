@@ -32,7 +32,7 @@ const changeDescription = (nameCard, text) => {
             cardName.innerHTML = ' SQL '
         }
         if(nameCard === '.postman') {
-            cardName.innerHTML = ' Postmans '
+            cardName.innerHTML = ' Postman '
         }  
     })
 

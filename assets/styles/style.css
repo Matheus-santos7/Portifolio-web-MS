@@ -291,6 +291,7 @@ main {
     font-size: 1.8rem;
     line-height: 3.2rem;
     color: #cccccc;
+    text-align: justify;
 }
 
 .article-about p spam {
