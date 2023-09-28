@@ -18,8 +18,8 @@ const changeDescription = (nameCard, text) => {
         if(nameCard === '.git') {
             cardName.innerHTML = ' Git '
         } 
-        if(nameCard === '.java') {
-            cardName.innerHTML = ' Java '
+        if(nameCard === '.node') {
+            cardName.innerHTML = ' Node '
         } 
         if(nameCard === '.linux') {
             cardName.innerHTML = ' Linux '
@@ -58,7 +58,7 @@ changeDescription(
 )
 
 changeDescription(
-    '.java',
+    '.node',
     'Básico.'   
 )
 changeDescription(
