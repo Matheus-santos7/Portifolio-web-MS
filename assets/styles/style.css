@@ -259,16 +259,16 @@ main {
 }
 
 .profile-about {
-    max-width: 400px;
-    margin-right: 10%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 30%;
+    margin-right: 5%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
-    border: 1px solid #7349d6;
+    border: 0.5px solid #b09fd6;
     transition: border 60s ease;
 }
 
 .profile-about:hover {
-    border: 6px solid #7349d6;
+    border: 6px solid #ccc9d1;
 }
 
 .article-about {
@@ -306,10 +306,6 @@ main {
 }
 
 /*------------------------------*/
-
-
-
-
 
 
 /*------------ SECTION Projetos -----------*/
@@ -361,18 +357,22 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
-    min-height: 50%;
+    height: auto;
+    min-height: 200px;
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 10px;
 }
 
 .project-info {
     padding: 10px 5px 0 3px;
+    height: 100px;
+    height: auto;
 }
 
 .project-info h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #7349d6;
 }
@@ -387,14 +387,14 @@ main {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .btns-project a {
-    padding: 10px 20px;
+    padding: 8px 16px;
     margin-top: 10px;
     outline: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     border-radius: 8px;
     text-decoration: none;
