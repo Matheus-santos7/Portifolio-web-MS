@@ -19,7 +19,7 @@ const changeDescription = (nameCard, text) => {
             cardName.innerHTML = ' Git '
         } 
         if(nameCard === '.node') {
-            cardName.innerHTML = ' Node '
+            cardName.innerHTML = ' Node.js '
         } 
         if(nameCard === '.linux') {
             cardName.innerHTML = ' Linux '
@@ -33,6 +33,9 @@ const changeDescription = (nameCard, text) => {
         }
         if(nameCard === '.postman') {
             cardName.innerHTML = ' Postman '
+        }
+        if(nameCard === '.bootstrap') {
+            cardName.innerHTML = ' bootstrap '
         }  
     })
 
@@ -54,12 +57,12 @@ changeDescription(
 
 changeDescription(
     '.js',
-    'Básico.'
+    'Intermediário.'
 )
 
 changeDescription(
     '.node',
-    'Básico.'   
+    'Intermediário.'   
 )
 changeDescription(
     '.sql',
@@ -81,6 +84,10 @@ changeDescription(
 changeDescription(
     '.postman',
     'Básico.'
+)
+changeDescription(
+    '.bootstrap',
+    'Intermediário.'
 )
 
 
