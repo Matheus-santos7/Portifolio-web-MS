@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #171717;
+    background-color: var(--secondary);
 }
 
 ::-webkit-scrollbar {
@@ -19,13 +19,27 @@ body {
 }
   
 ::-webkit-scrollbar-track {
-    background-color: #171717;
+    background-color: var(--secondary);
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: #7349d6;
+    background-color: var(--primary);
     border-radius: 10px;
 }
+
+:root {
+    --primary: #7349d6;
+    --secondary: #171717;
+    --border-color-primary: rgba(114, 114, 126, 0.2);
+    --box-shandow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    --border-color-secondary: 0.5px solid #b09fd6; /* Adicionando o ponto e vírgula aqui */
+    --white: #FAFAFA;
+}
+
+.icone path {
+    fill: var(--primary);
+}
+
 
 
 
@@ -37,10 +51,10 @@ header {
     top: 0;
     padding: 15px 80px;
     width: 100%;
-    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    border-bottom: 1px solid var(--border-color-primary);
     opacity: 0.97;
     z-index: 99;
-    background-color: #171717;
+    background-color: var(--secondary);
 }
 
 header nav{
@@ -53,7 +67,7 @@ header nav{
     text-decoration: none;
     font-size: 2.5rem;
     font-family: "IBM Plex Sans", sans-serif;
-    color: #FAFAFA;
+    color: var( --white);
     outline: none;
 }
 
@@ -86,7 +100,7 @@ header nav{
     content: "";
     height: 2px;
     width: 100%;
-    background-color: #7349d6;
+    background-color: var(--primary);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.6s;
@@ -99,20 +113,20 @@ header nav{
 }
 
 .nav-link:hover {
-    color: #FFF;
+    color: var( --white);
 }
 
 .line-1,.line-2, .line-3 {
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: var( --white);
     transition: 0.6s;
 }
 
 .line-1t, .line-2t, .line-3t {
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: var( --white);
     transition: transform 0.6s;
 }
 
@@ -163,22 +177,22 @@ main {
 .spam-home {
     display: block;
     font-size: 2.2rem;
-    color: #FFF5EE;
+    color: var( --white);
 }
 
 .article-home h1{
     font-size: 6.4rem;
     font-weight: 700;
-    color: #FFF5EE;
+    color: var( --white);
 }
 
 .article-home h1 spam {
-    color: #7349d6
+    color: var(--primary)
 }
 
 .article-home p {
     font-size: 2.7rem;
-    color: #FFF5EE;
+    color: var( --white);
 }
 
 .article-home p::after {
@@ -200,8 +214,8 @@ main {
     max-width: 200px;    
     padding: 15px;
     border-radius: 6px;
-    border: 1px solid #FAFAFA;
-    color: #FAFAFA;
+    border: 1px solid var( --white);
+    color: var( --white);
     text-decoration: none;
     font-weight: 500;
     font-size: 1.6rem;
@@ -209,7 +223,7 @@ main {
 }
 
 .get-in-touch:hover {
-    background-color: #FAFAFA;
+    background-color: var( --white);
     color: black;
 }
 
@@ -217,9 +231,9 @@ main {
     display: block;
     max-width: 150px;
     padding: 15px;
-    border: 1px solid #7349d6;
+    border: 1px solid var(--primary);
     border-radius: 6px;
-    color: #7349d6;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 500;
     font-size: 1.6rem;
@@ -228,7 +242,7 @@ main {
 }
 
 .cv-download:hover {
-    background-color: #7349d6;
+    background-color: var(--primary);
     color: #000;
 }
 
@@ -261,9 +275,9 @@ main {
 .profile-about {
     width: 30%;
     margin-right: 5%;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: var( --box-shandow);
     border-radius: 50%;
-    border: 0.5px solid #b09fd6;
+    border: var( --border-color-secondary);
     transition: border 60s ease;
 }
 
@@ -277,13 +291,13 @@ main {
 
 .article-about h2{
     margin-bottom: 20px;
-    color: #fafafa;
+    color: var( --white);
     font-size: 4rem;
     font-weight: 500;
 }
 
 .point {
-    color: #fafafa;
+    color: var( --white);
     font-size: 4,5rem;
 }
 
@@ -295,7 +309,7 @@ main {
 }
 
 .article-about p spam {
-    color: #7349d6;
+    color: var(--primary);
     font-weight: 600;
     text-decoration: none;
 }
@@ -319,7 +333,7 @@ main {
     padding-bottom: 24px;
     font-size: 4rem;
     font-weight: 500;
-    color: #fafafa;
+    color: var( --white);
 }
 
 .container-projects {
@@ -345,11 +359,11 @@ main {
     width: 343px;
     height: 425px;
     border-radius: 8px;
-    border: 1px solid #171717;
+    border: 1px solid var(--secondary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease;
     background-color: #222222;
-    color: #fafafa;
+    color: var( --white);
     text-decoration: none;
 }
 
@@ -374,7 +388,7 @@ main {
 .project-info h4 {
     font-size: 2rem;
     font-weight: 700;
-    color: #7349d6;
+    color: var(--primary);
 }
 
 .project-info p {
@@ -405,15 +419,15 @@ main {
 }
 
 .view-live {
-    background-color: #7349d6;
-    border: 1px solid #7349d6;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
     color: #000;
 }
 
 .github-repo {
     background-color: #212121;
-    border: 1px solid #7349d6;
-    color: #fafafa;
+    border: 1px solid var(--primary);
+    color: var( --white);
 }
 
 
@@ -425,7 +439,7 @@ main {
 
 .embreve p {
     font-size: 3rem;
-    color: #fafafa;
+    color: var( --white);
 }
 
 .show-more {
@@ -433,12 +447,12 @@ main {
     margin: 150px auto 0 auto;
     padding: 10px 60px;
     border-radius: 6px;
-    border: 1px solid #fff;
+    border: 1px solid var( --white);
     font-size: 1.7rem;
     cursor: pointer;
     font-weight: 550;
-    background-color: #171717;
-    color: #7349d6;
+    background-color: var(--secondary);
+    color: var(--primary);
     outline: none;
 }
 
@@ -448,7 +462,7 @@ main {
 
 .my-repositories {
     margin-left: 8%;
-    color: #fff;
+    color: var( --white);
 }
 
 /*-------------------------------------*/
@@ -480,7 +494,7 @@ main {
 
 .title-skills {
     font-size: 4rem;
-    color: #fafafa;
+    color: var( --white);
 }
 
 .article-skills p {
@@ -494,7 +508,7 @@ main {
     font-weight: 600;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #7349d6;
+    color: var(--primary);
 }
 
 .grid-skills {
@@ -518,7 +532,7 @@ main {
 }
 
 .card-skills:hover {
-    border: 1px solid #7349d6;
+    border: 1px solid var(--primary);
 }
 
 .card-skills img {
@@ -550,7 +564,7 @@ main {
 .title-contact {
     margin-bottom: 25px;
     font-size: 4rem;
-    color: #fafafa;
+    color: var( --white);
 }
 
 .social-links {
@@ -573,7 +587,7 @@ main {
     width: 35%;
     padding: 20px;
     border-radius: 1rem;
-    background-color: #171717;
+    background-color: var(--secondary);
 }
 
 .form label {
@@ -581,7 +595,7 @@ main {
     margin-bottom: 20px;
     font-size: 1.8rem;
     font-family: "IBM Plex Sans", sans-serif;
-    color: #fafafa;
+    color: var( --white);
 }
 
 .form input {
@@ -589,7 +603,7 @@ main {
     width: 100%;
     padding: 15px 0 15px 8px;
     background-color: #343434;
-    color: #fafafa;
+    color: var( --white);
     border: none;
     border-radius: 8px;
     outline: none;
@@ -601,7 +615,7 @@ main {
     height: 100px;
     padding: 8px;
     background-color: #343434;
-    color: #fafafa;
+    color: var( --white);
     border: none;
     border-radius: 8px;
     outline: none;
@@ -613,7 +627,7 @@ main {
     width: 60%;
     margin-top: 30px;
     padding: 10px 0;
-    background-color: #7349d6;
+    background-color: var(--primary);
     border: none;
     border-radius: 0.5rem;
     font-size: 2rem;
@@ -657,7 +671,7 @@ footer a {
     max-width: 150px;
     text-decoration: none;
     font-size: 1.8rem;
-    color: #fafafa;
+    color: var( --white);
     transition: 0.2s;
 }
 
@@ -718,6 +732,7 @@ footer a:hover {
     .profile-about {
         display: flex;
         width: 50%!important;
+        margin-bottom: 70px;
         
     }
 
@@ -792,7 +807,7 @@ footer a:hover {
        left: 0;
        overflow: hidden;
        text-align: center;
-       background-color: #171717;
+       background-color: var(--secondary);
        opacity: 0.97;
     }
 

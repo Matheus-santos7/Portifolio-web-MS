@@ -37,6 +37,15 @@ const changeDescription = (nameCard, text) => {
         if(nameCard === '.bootstrap') {
             cardName.innerHTML = ' bootstrap '
         }  
+        if(nameCard === '.react') {
+            cardName.innerHTML = ' react '
+        }  
+        if(nameCard === '.tailwind') {
+            cardName.innerHTML = ' tailwind '
+        }  
+        if(nameCard === '.next') {
+            cardName.innerHTML = ' Next.js '
+        }  
     })
 
     document.querySelector(nameCard).addEventListener('mouseout', () => {
@@ -88,6 +97,18 @@ changeDescription(
 changeDescription(
     '.bootstrap',
     'Intermediário.'
+)
+changeDescription(
+    '.next',
+    'Básico.'
+)
+changeDescription(
+    '.react',
+    'Básico.'
+)
+changeDescription(
+    '.tailwind',
+    'Básico.'
 )
 
 
