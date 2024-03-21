@@ -1,4 +1,0 @@
-[[headers]]
-  for = "/*.pdf"
-    [headers.values]
-    Content-Disposition = "attachment"
