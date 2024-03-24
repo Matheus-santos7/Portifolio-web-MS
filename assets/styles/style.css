@@ -187,7 +187,7 @@ main {
 }
 
 .article-home h1 spam {
-    color: var(--primary)
+    color: var(--primary)!important;
 }
 
 .article-home p {
@@ -297,8 +297,8 @@ main {
 }
 
 .point {
-    color: var( --white);
-    font-size: 4,5rem;
+    color: var( --primary);
+    font-size: 1.2em;
 }
 
 .article-about p {
@@ -309,7 +309,7 @@ main {
 }
 
 .article-about p spam {
-    color: var(--primary);
+    color: var(--primary)!important;
     font-weight: 600;
     text-decoration: none;
 }
@@ -323,6 +323,11 @@ main {
 
 
 /*------------ SECTION Projetos -----------*/
+
+.cards-project.cards-hidden {
+    display: none;
+}
+
 
 .s-projects {
     padding: 40px 0 100px 0;
@@ -344,7 +349,7 @@ main {
     padding: 0 20px;
 }
 
-.row-1, .row-2 {
+.row-1, .row-2, .row-3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -431,7 +436,6 @@ main {
 }
 
 
-
 .embreve {
     text-align: center;
     margin: auto; 
@@ -444,11 +448,11 @@ main {
 
 .show-more {
     display: block;
-    margin: 150px auto 0 auto;
+    margin: 50px auto 0 auto;
     padding: 10px 60px;
     border-radius: 6px;
     border: 1px solid var( --white);
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     cursor: pointer;
     font-weight: 550;
     background-color: var(--secondary);
